@@ -7,10 +7,5 @@ int main() {
     } else {
         printf("42 is odd!\n");
     }
-    if (is_odd(42)) {
-        printf("42 is odd!\n");
-    } else {
-        printf("42 is even!\n");
-    }
     return 0;
 }

@@ -5,6 +5,10 @@ LIB_NAME = libeven
 SRC = src/even.c
 OBJ = $(SRC:.c=.o)
 
+PREFIX=/usr/local
+INCLUDEDIR=$(PREFIX)/include
+LIBDIR=$(PREFIX)/lib
+
 all: static shared example
 
 static: $(OBJ)
