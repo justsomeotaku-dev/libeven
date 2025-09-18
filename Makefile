@@ -19,19 +19,3 @@ shared: $(OBJ)
 
 example: static
 	$(CC) examples/main.c -L. -leven -Iinclude -o main
-
-clean:
-	rm -f src/*.o *.a *.so main
-	
-install: all
-	mkdir -p $(INCLUDEDIR) $(LIBDIR)
-	cp include/even.h $(INCLUDEDIR)
-	cp $(LIB_NAME).a $(LIBDIR)
-	cp $(LIB_NAME).so $(LIBDIR)
-	@echo "Library installed to $(PREFIX)"
-
-uninstall:
-	rm -f $(INCLUDEDIR)/even.h
-	rm -f $(LIBDIR)/$(LIB_NAME).a
-	rm -f $(LIBDIR)/$(LIB_NAME).so
-	@echo "Library uninstalled from $(PREFIX)"
