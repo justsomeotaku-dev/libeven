@@ -19,6 +19,8 @@ make          # build library + demo
 ```
 # Example usage
 ```C
+#include "even.h"
+
 int main() {
     int number = 42;
     if (is_even(number)) {
