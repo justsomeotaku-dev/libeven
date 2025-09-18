@@ -22,7 +22,8 @@ example: static
 
 clean:
 	rm -f src/*.o *.a *.so main
-	install: all
+	
+install: all
 	mkdir -p $(INCLUDEDIR) $(LIBDIR)
 	cp include/even.h $(INCLUDEDIR)
 	cp $(LIB_NAME).a $(LIBDIR)
