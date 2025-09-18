@@ -1,6 +1,5 @@
 # libeven
 A lightweight C library providing functions to check if an integer is even/odd. It includes both a standard and a bitwise-optimized implementation.
-## Build
 # Build the Library
 Clone the repository and build using make:
 # Manual install
