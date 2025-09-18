@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "../include/even.h"
+#include <even.h>
 
 int main() {
     if (is_even(42)) {
